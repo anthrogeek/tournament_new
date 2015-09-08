@@ -112,6 +112,6 @@ def swissPairings():
     pairings = []
     for x in range(0, countPlayers()-1,2):
         pairings.append(row[x] + row[x+1])
-
+    conn.close()
     return pairings
 
