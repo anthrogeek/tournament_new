@@ -19,7 +19,6 @@ def testCount():
     deleteMatches()
     deletePlayers()
     c = countPlayers()
-    print c
     if c == '0':
         raise TypeError(
             "countPlayers() should return numeric zero, not string '0'.")
@@ -127,14 +126,14 @@ def testPairings():
 
 
 if __name__ == '__main__':
-    #testDeleteMatches()
-    #testDelete()
-    #testCount()
-    #testRegister()
-    #testRegisterCountDelete()
-    #testStandingsBeforeMatches()
+    testDeleteMatches()
+    testDelete()
+    testCount()
+    testRegister()
+    testRegisterCountDelete()
+    testStandingsBeforeMatches()
     testReportMatches()
-    #testPairings()
-    #print "Success!  All tests pass!"
+    testPairings()
+    print "Success!  All tests pass!"
 
 
