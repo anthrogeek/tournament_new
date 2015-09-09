@@ -110,7 +110,7 @@ def swissPairings():
     cursor.execute("SELECT id, name FROM standings")
     row = cursor.fetchall()
     pairings = []
-    for x in range(0, countPlayers()-1,2):
+    for x in range(0, countPlayers()-1,2):   # looping through to get player pairings.
         pairings.append(row[x] + row[x+1])
     conn.close()
     return pairings
